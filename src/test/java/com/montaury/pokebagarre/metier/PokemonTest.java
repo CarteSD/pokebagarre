@@ -1,3 +1,13 @@
+/**
+ * @author Estéban DESESSARD
+ * @date 20/02/2025
+ * @description Réalisation de test pour la méthode estVainqueurContre() de la classe Pokemon
+ *  - Test de la méthode estVainqueurContre() avec des pokemons ayant des attaques et des défenses différentes
+ *  - Test de la méthode estVainqueurContre() avec des pokemons ayant des attaques identiques et des défenses différentes
+ *  - Test de la méthode estVainqueurContre() avec des pokemons ayant des attaques et des défenses identiques
+ */
+
+
 package com.montaury.pokebagarre.metier;
 
 import org.junit.jupiter.api.Test;
