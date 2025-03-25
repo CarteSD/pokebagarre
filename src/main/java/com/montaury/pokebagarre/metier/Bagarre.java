@@ -16,7 +16,6 @@ public class Bagarre {
     this.webApi = webApi;
   }
 
-
   public CompletableFuture<Pokemon> demarrer(String nomPremierPokemon, String nomSecondPokemon) {
     validerNomPokemons(nomPremierPokemon, nomSecondPokemon);
     return webApi.recupererParNom(nomPremierPokemon)
