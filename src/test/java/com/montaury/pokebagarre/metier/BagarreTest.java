@@ -20,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class BagarreTest {
 
     @Test
-    void exception_ErreurPokemonNonRenseigne_si_pokemon1_est_vide() {
+    void devrait_lever_exception_ErreurPokemonNonRenseigne_si_pokemon1_est_vide() {
         // Given
         Bagarre bagarre = new Bagarre();
         String nomPremierPokemon = "";
@@ -34,7 +34,7 @@ class BagarreTest {
     }
 
     @Test
-    void exception_ErreurPokemonNonRenseigne_si_pokemon2_est_vide() {
+    void devrait_lever_exception_ErreurPokemonNonRenseigne_si_pokemon2_est_vide() {
         // Given
         Bagarre bagarre = new Bagarre();
         String nomPremierPokemon = "Premier pokemon";
@@ -48,7 +48,7 @@ class BagarreTest {
     }
 
     @Test
-    void exception_ErreurMemePokemon_si_pokemon1_et_pokemon2_identiques() {
+    void devrait_lever_exception_ErreurMemePokemon_si_pokemon1_et_pokemon2_identiques() {
         // Given
         Bagarre bagarre = new Bagarre();
         String nomPremierPokemon = "Premier pokemon";
@@ -62,7 +62,7 @@ class BagarreTest {
     }
 
     @Test
-    void exception_ErreurPokemonNonRenseigne_si_pokemon1_est_null() {
+    void devrait_lever_exception_ErreurPokemonNonRenseigne_si_pokemon1_est_null() {
         // Given
         Bagarre bagarre = new Bagarre();
         String nomPremierPokemon = null;
@@ -76,7 +76,7 @@ class BagarreTest {
     }
 
     @Test
-    void exception_ErreurPokemonNonRenseigne_si_pokemon2_est_null() {
+    void devrait_lever_exception_ErreurPokemonNonRenseigne_si_pokemon2_est_null() {
         // Given
         Bagarre bagarre = new Bagarre();
         String nomPremierPokemon = "Premier pokemon";
@@ -92,7 +92,7 @@ class BagarreTest {
     private PokeBuildApi fakeApi = Mockito.mock(PokeBuildApi.class);
 
     @Test
-    void exception_ErreurRecuperationPokemon_si_pokemon1_existe_pas() {
+    void devrait_lever_exception_ErreurRecuperationPokemon_si_pokemon1_existe_pas() {
         // Given
         Bagarre bagarre = new Bagarre(fakeApi);
         String nomPremierPokemon = "Pokemon inexistant";
@@ -113,7 +113,7 @@ class BagarreTest {
     }
 
     @Test
-    void exception_ErreurRecuperationPokemon_si_pokemon2_existe_pas() {
+    void devrait_lever_exception_ErreurRecuperationPokemon_si_pokemon2_existe_pas() {
         // Given
         Bagarre bagarre = new Bagarre(fakeApi);
         String nomPremierPokemon = "Pikachu";
@@ -134,7 +134,7 @@ class BagarreTest {
     }
 
     @Test
-    void retourne_pokemon1_si_pokemon1_est_meilleur() {
+    void devrait_retourner_pokemon1_si_pokemon1_est_meilleur() {
         // Given
         Bagarre bagarre = new Bagarre(fakeApi);
         String nomPremierPokemon = "Pikachu";
@@ -157,7 +157,7 @@ class BagarreTest {
     }
 
     @Test
-    void retourne_pokemon2_si_pokemon2_est_meilleur() {
+    void devrait_retourner_pokemon2_si_pokemon2_est_meilleur() {
         // Given
         Bagarre bagarre = new Bagarre(fakeApi);
         String nomPremierPokemon = "Pikachu";
