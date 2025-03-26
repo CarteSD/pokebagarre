@@ -23,12 +23,9 @@ javafx {
 test {
   useJUnitPlatform()
   finalizedBy jacocoTestReport // report is always generated after tests run
-  /**
-   systemProperties['java.awt.headless'] = true
-   systemProperties['testfx.robot'] = 'glass'
-   systemProperties['testfx.headless'] = 'true'
-   */
-
+  systemProperties['java.awt.headless'] = true
+  systemProperties['testfx.robot'] = 'glass'
+  systemProperties['testfx.headless'] = 'true'
 }
 
 jacocoTestReport {
